@@ -39,6 +39,18 @@
         </interface>
     </hal>
     <hal format="aidl">
+        <name>vendor.lineage.livedisplay</name>
+        <version>1</version>
+        <interface>
+            <name>IDisplayColorCalibration</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
         <name>android.hardware.graphics.allocator</name>
         <interface>
             <name>IAllocator</name>
