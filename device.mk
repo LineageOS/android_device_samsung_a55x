@@ -348,6 +348,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     thermal_info_config.json
 
+# Touch HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch-service.samsung
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.samsung \
