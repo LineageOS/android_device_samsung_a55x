@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37ef1ce0_c5bfdbe3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-11-19T10:38:14Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_device_samsung_s5e9925-common/blob/137cefd36fcd7ec5b3abe2d110673dd0e0e811bc/rro_overlays/LineageSDKOverlayCommon/res/values/config.xml#L7",
+      "revId": "6f6c004724e34e49634a2cfe6c26bd84fbe53d3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
