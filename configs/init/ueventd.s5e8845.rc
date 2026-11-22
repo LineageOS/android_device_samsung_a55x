@@ -44,6 +44,8 @@
 /dev/dma_heap/crypto-uncached       0660   system     system
 /dev/dma_heap/camera                0660   cameraserver     camera
 /dev/dma_heap/camera-uncached       0660   cameraserver     camera
+/dev/dma_heap/camerapool            0660   cameraserver     camera
+/dev/dma_heap/camerapool-uncached   0660   cameraserver     camera
 
 /dev/dma_heap/vframe-secure         0660   system     drmrpc
 /dev/dma_heap/vscaler-secure        0660   system     system
@@ -264,7 +266,7 @@
 /dev/vts_fio_dev         0660   audioserver   system
 
 # FRP
-/dev/block/by-name/frp          0660   root     system
+/dev/block/by-name/frp          0660   system     system
 
 # Camellia
 /dev/camellia_iwc       0660   root     system
