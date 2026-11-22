@@ -69,8 +69,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/wifi/init.insmod.wifi.cfg': blob_fixup()
          .regex_replace(r'\A', 'insmod|/system_dlkm/lib/modules/rfkill.ko\n'),
     'vendor/lib64/hw/camera.s5e8845.so': blob_fixup()
-        .sig_replace('e7 89 01 94', '1f 20 03 d5')  # NOP VendorCameraIPCtoRIL::enable m_sendRequest()
-        .sig_replace('92 89 01 94', '1f 20 03 d5') # NOP VendorCameraIPCtoRIL::disable m_sendRequest()
+        .sig_replace('e3 8a 01 94', '1f 20 03 d5')  # NOP VendorCameraIPCtoRIL::enable m_sendRequest()
+        .sig_replace('8e 8a 01 94', '1f 20 03 d5')  # NOP VendorCameraIPCtoRIL::disable m_sendRequest()
         .sig_replace('48 d1 ff 10 1f 20 03 d5 09 dc ff 10', 'c8 e7 ff 10 1f 20 03 d5 09 dc ff 10')
         # Enable RAW Support
         .sig_replace('28 00 80 52 29 1c 00 72', '13 00 00 14 29 1c 00 72')
@@ -80,12 +80,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libui_shim.so'),
     'vendor/lib64/libskeymint_cli.so': blob_fixup()
         .replace_needed('libcrypto.so', 'libcryptx.so'),
-    'vendor/lib64/libsec-ril-impl.so': blob_fixup()
-        # Always emit uiccApplicationsEnablementChanged
-        .sig_replace('1f 00 08 6b ab 01 00 54', '1f 00 08 6b 1f 20 03 d5')
-        .sig_replace('bf 02 08 6b ab 01 00 54', 'bf 02 08 6b 1f 20 03 d5')
-        # Skip legacy UICC code
-        .sig_replace('1f 00 08 6b 0c 01 00 54', '1f 00 08 6b 08 00 00 14'),
     'vendor/lib64/libsensorlistener.so': blob_fixup()
         .add_needed('libshim_sensorndkbridge.so'),
     (
