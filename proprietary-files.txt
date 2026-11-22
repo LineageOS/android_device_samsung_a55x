@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Proprietary files - from A556BXXSIDZI3, unless pinned
+# Proprietary files - from A556BXXUIEZJ1, unless pinned
 
 # Audio - Configurations
 vendor/etc/dolby/dax-default.xml
@@ -180,16 +180,18 @@ vendor/firmware/os.checked.bin:vendor/firmware/SM-A556B/os.checked.bin
 vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A556B/pablo_icpufw.bin
 vendor/firmware/vts.bin:vendor/firmware/SM-A556B/vts.bin
 
-# Firmware - from SM-A556E - A556EXXSIDZI3
-vendor/firmware/AIE.bin:vendor/firmware/SM-A556E/AIE.bin|98c538d2ff415c48044aa3d450f268d85bb8392c
-vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A556E/calliope_sram.bin|41d0f1ae314779530c9ebcfa1a4c66a6ea379a09
-vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A556E/mfc_fw.bin|84423f8e1b9d4936ae6db828a8d9e680da46af01
-vendor/firmware/os.checked.bin:vendor/firmware/SM-A556E/os.checked.bin|b8b00b689c5bc5451b2e502d2094d18f5d646df3
-vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A556E/pablo_icpufw.bin|1e24a8b3f38194bb0dea8667ec2abab57079e7d6
-vendor/firmware/vts.bin:vendor/firmware/SM-A556E/vts.bin|affbd71ecb177db91e5cea7a68550a6c05d10b80
+# Firmware - from SM-A556E - A556EXXUIEZJ1
+vendor/firmware/AIE.bin:vendor/firmware/SM-A556E/AIE.bin|52bd048b6a0d08969f12a38b07bacf6607ba214b
+vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A556E/calliope_sram.bin|3d5bda12af1ec86e30e732197b50ca5c8c257ca7
+vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A556E/mfc_fw.bin|d967607c61d16e11e7bd1aa2ac95a0996b094302
+vendor/firmware/os.checked.bin:vendor/firmware/SM-A556E/os.checked.bin|27620fe7be3b69395abc527518f3fe18051e563a
+vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A556E/pablo_icpufw.bin|598eddda695e01c44393da209fc9f852b79252b4
+vendor/firmware/vts.bin:vendor/firmware/SM-A556E/vts.bin|3f024b3f4fbecf5003d91768dee1bdd3eeecdcfb
 
 # GNSS
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/gps.rose.sh:vendor/bin/hw/gps.sh
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/gpsd_K44:vendor/bin/hw/gpsd_K44
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/vendor.samsung.hardware.gnss.lsi.rose-service:vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/init.gps.rose.apex.sh.rc:vendor/etc/init/init.gps.rose.rc
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/vendor.samsung.hardware.gnss.lsi.rose-service.rc:vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/gnss_aidl_lib.so:vendor/lib64/gnss_aidl_lib.so
@@ -197,19 +199,15 @@ vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/libwrappergps.so:vend
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/vendor.samsung.hardware.gnss-V3-ndk.so:vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/etc/init/init.gps.rc
 
-# GNSS - A556BXXSABYI1
-vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/gpsd_K44:vendor/bin/hw/gpsd_K44|2865193f8e27a80066fe92c954f27ffee1aa50cf|a103a7f3b10dbe50ac345c8c34ec8a6b3bf3db60
-vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/vendor.samsung.hardware.gnss.lsi.rose-service:vendor/bin/hw/vendor.samsung.hardware.gnss-service|1c16eb8af8452b4c2628eee34c72c80233f97eba
-
 # GNSS - Configuration
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.cfg:vendor/etc/gnss/gps.cfg
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.debug.cfg:vendor/etc/gnss/gps.debug.cfg
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.issuetracker.cfg:vendor/etc/gnss/gps.issuetracker.cfg
 vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/ca.pem:vendor/etc/gnss/ca.pem
 
-# GNSS - Firmware - A556BXXSABYI1
-vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/firmware/firmware_signed_a55xnaxx.bin:vendor/firmware/gnss/firmware_signed_a55xnaxx.bin|b1055b06ed8ccc092815df984482a50acd152346
-vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/firmware/firmware_signed_a55xnsxx.bin:vendor/firmware/gnss/firmware_signed_a55xnsxx.bin|3c36342ca215c92268e005d4dd5ab7b7184bcd83
+# GNSS - Firmware
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/firmware/firmware_signed_a55xnaxx.bin:vendor/firmware/gnss/firmware_signed_a55xnaxx.bin
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/firmware/firmware_signed_a55xnsxx.bin:vendor/firmware/gnss/firmware_signed_a55xnsxx.bin
 
 # Graphics
 vendor/etc/Khronos/OpenCL/samsung.icd;SYMLINK=vendor/Khronos/OpenCL/vendors/samsung.icd
@@ -249,10 +247,10 @@ vendor/firmware/tsp/gt9895_a55x.bin:recovery/root/vendor/firmware/tsp/gt9895_a55
 vendor/firmware/tsp/gt9895_a55x.bin:vendor_ramdisk/vendor/firmware/tsp/gt9895_a55x.bin
 
 # Ramdisk - SGPU - Firmware - from SM-A556B
-recovery/lib/firmware/sgpu/vangogh_lite_unified_evt0.bin:vendor_ramdisk/lib/firmware/sgpu/vangogh_lite_unified_evt0_b.bin|b81fb7ebc7227ec061e11d9af1e3b5a40be664e9
+recovery/lib/firmware/sgpu/vangogh_lite_unified_evt0.bin:vendor_ramdisk/lib/firmware/sgpu/vangogh_lite_unified_evt0_b.bin|6e9b65c6dd20721c18eb9458e768861081ae0095
 
-# Ramdisk - SGPU - Firmware - from SM-A556E - A556EXXSIDZI3
-recovery/lib/firmware/sgpu/vangogh_lite_unified_evt0.bin:vendor_ramdisk/lib/firmware/sgpu/vangogh_lite_unified_evt0_e.bin|0c82d839993799403ac6e0790e2e5beb0db1d12f
+# Ramdisk - SGPU - Firmware - from SM-A556E - A556EXXUIEZJ1
+recovery/lib/firmware/sgpu/vangogh_lite_unified_evt0.bin:vendor_ramdisk/lib/firmware/sgpu/vangogh_lite_unified_evt0_e.bin|08cddc8cd0be453da485320ac55f2a93d3c15d59
 
 # RIL
 vendor/bin/hw/rild
@@ -263,6 +261,7 @@ vendor/lib64/libVendorSemTelephonyProps.so
 vendor/lib64/libril_sem.so
 vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME
 vendor/lib64/libsecril-client.so
+vendor/lib64/libsecril_wrapper.so
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so

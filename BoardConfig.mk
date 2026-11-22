@@ -101,7 +101,7 @@ TARGET_SOC := $(TARGET_BOARD_PLATFORM)
 include hardware/samsung_slsi-linaro/config/BoardConfig8845.mk
 
 # Security
-VENDOR_SECURITY_PATCH := 2026-09-05
+VENDOR_SECURITY_PATCH := 2026-10-05
 
 # SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
