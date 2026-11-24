@@ -128,6 +128,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung
 
+$(call soong_config_set,samsungCameraVars,extra_ids,60) # ID=60 is macro
 $(call soong_config_set_bool,samsungCameraVars,needs_fps_field,true)
 $(call soong_config_set_bool,samsungCameraVars,usage_64bit,true)
 
